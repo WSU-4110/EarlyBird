@@ -1,0 +1,25 @@
+{
+  "name": "earlybird",
+  "version": "1.0.0",
+  "description": "EarlyBird Web Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WSU-4110/EarlyBird.git"
+  },
+  "author": "Group1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WSU-4110/EarlyBird/issues"
+  },
+  "homepage": "https://github.com/WSU-4110/EarlyBird#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8"
+  }
+}
