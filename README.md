@@ -1,4 +1,4 @@
-### EarlyBird
+## EarlyBird
 EarlyBird is a web application allows people build their resumes by sharing project ideas and study resources, preparing technical interviews.
 
 ## Front end
