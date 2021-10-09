@@ -1,0 +1,58 @@
+.navbar{
+    width: 100%; 
+    background-color: black;
+    padding-bottom: 0px;
+    
+}
+
+.item-left{
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 18px;
+    
+   
+}
+.item-right{
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 18px;
+    
+}
+.Home{
+    text-decoration: none;
+    padding-left: 0px;
+    color: white;
+}
+.Projects{
+    text-decoration: none;
+    padding-left: 40px;
+    color: white;
+}
+.TechInterview{
+    text-decoration: none;
+    padding-left: 40px;
+    color: white;
+}
+.StudyRes{
+    text-decoration: none;
+    padding-left: 40px;
+    color: white;
+}
+.Login{
+    text-decoration: none;
+    padding-left: 520px;
+    color: white;
+}
+.CreateAccount{
+    text-decoration: none;
+    padding-left: 0px;
+    color: white;
+}
+.logo{
+    width: 120px;
+    height: 100px;
+    
+}
+p{
+    color: white;
+}

@@ -15,8 +15,19 @@ function Navbar() {
 <ul class="tabs">
 
 <a href = "./Home"><img src = "images/logo.png" alt = "logo" class = "logo"></img></a>
-   
     
+    <li class="item-left">
+        <Link class="Home" to="./Home">Home</Link>
+    </li>
+    <li class="item-left">
+        <Link class="Projects" to ="./Projects">Projects</Link>
+    </li>
+    <li class="item-left">
+        <Link class="TechInterview" to ="./TechInterview">Technical Interview</Link>
+    </li>
+    <li class="item-left">
+        <Link class="StudyRes" to = "./StudyRes">Study Resources</Link>
+     </li>
      <li class="item-right">
         <Link class="Login" to = "/Login">Login</Link>
      </li>
