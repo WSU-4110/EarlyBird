@@ -14,8 +14,8 @@ Heroku
 You will find all the dependencies & packages in jason files.
 
 ## How to run
-Step1: git clone <project repository>
-step2: in the main directory run: npm install
-step3: in the front end directory run: npm install
-step4: in the front end directory run: npm start
-run server:in the main directory run:  nodemon server.js
+* Step1: git clone <project repository>
+* step2: in the main directory run: npm install
+* step3: in the front end directory run: npm install
+* step4: in the front end directory run: npm start
+* run server:in the main directory run:  nodemon server.js
