@@ -11,7 +11,11 @@ Node.js, Express.js, MongoDB, Mongoose
 Heroku
 
 ## APIs
-You will find all the dependencies & packages that you need to install in the Json file.
+You will find all the dependencies & packages in jason files.
 
-## So far (10/03)
-It includes the most of the components that we need for our web application.
+## How to run
+* Step1: git clone <project repository>
+* step2: in the main directory run: npm install
+* step3: in the front end directory run: npm install
+* step4: in the front end directory run: npm start
+* run server:in the main directory run:  nodemon server.js
