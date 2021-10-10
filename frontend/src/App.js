@@ -10,6 +10,9 @@ import Register from './components/Register';
 import Login from './components/Login';
 
 
+
+
+
 function App() {
 
 
@@ -22,9 +25,12 @@ function App() {
   //About page
   return (
     
+    
     <Router>
        
        <Navbar/>
+
+      
         <Switch>
         <Route path= "/Home">
            <Home/>

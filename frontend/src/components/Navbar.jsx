@@ -31,9 +31,9 @@ function Navbar() {
      <li class="item-right">
         <Link class="Login" to = "/Login">Login</Link>
      </li>
-     <p class = "item-right">/</p>
+     <a href ="./register" class = "item-right">/</a>
      <li class="item-right">
-        <Link class="CreateAccount" to = "/Register">Create Account</Link>
+        <Link class="register" to = "/Register">Register</Link>
         
      </li>
 

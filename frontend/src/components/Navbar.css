@@ -42,8 +42,9 @@
     text-decoration: none;
     padding-left: 520px;
     color: white;
+    
 }
-.CreateAccount{
+.register{
     text-decoration: none;
     padding-left: 0px;
     color: white;
@@ -53,6 +54,9 @@
     height: 100px;
     
 }
-p{
+a{
     color: white;
+    text-decoration: none;
+    
 }
+
