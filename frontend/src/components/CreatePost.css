@@ -1,0 +1,37 @@
+.createArea {
+    margin-top: 100px;
+    width: 800px;
+}
+
+h4 {
+    margin-bottom: 40px;
+    font-weight: 150;
+}
+
+.selections {
+    font-weight: 100;
+}
+
+.title::placeholder {
+    font-weight: 100;
+}
+
+.submitBtn {
+    background-color: #b6cebf;
+    border: none;
+    padding: 10px 25px;
+    display: inline-block;
+    margin: 4px 10px;
+    font-weight: 150;
+}
+.submitBtn:hover {
+    background-color: #608080;
+}
+
+.cancelBtn {
+    border: none;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 150;
+}
