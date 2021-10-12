@@ -40,13 +40,18 @@
 }
 .Login{
     text-decoration: none;
-    padding-left: 520px;
+    padding-left: 400px;
     color: white;
     
 }
 .register{
     text-decoration: none;
     padding-left: 0px;
+    color: white;
+}
+.CreatePost{
+    text-decoration: none;
+    padding-left: 40px;
     color: white;
 }
 .logo{

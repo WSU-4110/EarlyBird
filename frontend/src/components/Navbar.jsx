@@ -28,6 +28,9 @@ function Navbar() {
     <li class="item-left">
         <Link class="StudyRes" to = "./StudyRes">Study Resources</Link>
      </li>
+     <li class="item-left">
+        <Link class="CreatePost" to = "./CreatePost"> Create Post</Link>
+     </li>
      <li class="item-right">
         <Link class="Login" to = "/Login">Login</Link>
      </li>
