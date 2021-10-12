@@ -13,7 +13,7 @@ Node.js, Express.js, MongoDB, Mongoose
 Heroku
 
 ## APIs
-You will find all the dependencies & packages in jason files.
+You will find all the dependencies & packages in json files.
 
 ## How to run
 * Step1: git clone <project repository>
