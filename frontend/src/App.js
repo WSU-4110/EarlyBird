@@ -45,7 +45,7 @@ function App() {
            <StudyRes/>
           </Route>
           <Route path= "/Search">
-           <StudyRes/>
+           <Search/>
           </Route>
           <Route path= "/Login">
            <Login/>
