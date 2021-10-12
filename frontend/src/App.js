@@ -8,7 +8,7 @@ import TechInterview from './components/TechInterview';
 import StudyRes from './components/StudyRes';
 import Register from './components/Register';
 import Login from './components/Login';
-
+import Search from './components/Search';
 
 
 
@@ -42,6 +42,9 @@ function App() {
            <TechInterview/>
           </Route>
           <Route path= "/StudyRes">
+           <StudyRes/>
+          </Route>
+          <Route path= "/Search">
            <StudyRes/>
           </Route>
           <Route path= "/Login">
