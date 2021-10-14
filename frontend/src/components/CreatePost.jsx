@@ -5,7 +5,19 @@ import ReactHtmlParser, {precessNodes, convertNodeToElement, htmlparser2} from '
 import './CreatePost.css'
 
 function CreatePost() {
-    const [text, setText] = useState("");
+    //  create const keep track of the input
+    const [input, setInput] = useState({
+        category: '',
+        title: '',
+        content: ''
+
+    })
+
+    //  funtion to hanle the change in the input area
+    function handleChange(event) {
+
+        const {name, value};
+    }
 
     return (
         <div className='createArea container-md'>
@@ -20,7 +32,7 @@ function CreatePost() {
                     </select>
                 </div>
                 <div className="form-group">
-                    <input className='title form-control' placeholder="Title" name="title"></input>
+                    <input onChange={handleChange} name="title" value={input.title} className='title form-control' placeholder="Title" ></input>
                 </div>
 
                 <div className="form-group editor">
@@ -37,7 +49,7 @@ function CreatePost() {
 
                 <div class="button col-auto">
                 <button type="button" className="cancelBtn btn-light">CANCEL</button>
-                <button type="submit" className="submitBtn btn btn-secondary">POST</button>  
+                <button onClick={handleClick} type="submit" className="submitBtn btn btn-secondary">POST</button>  
                 </div>
             </form>
         </div>)

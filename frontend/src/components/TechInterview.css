@@ -1,7 +1,0 @@
-article {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    background-color: white;
-    padding: 10px;
-  }
