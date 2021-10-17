@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 //  connect to mongoose
-mongoose.connect("mongodb+srv://admin-bella:Maonu413@cluster0.xiuj9.mongodb.net/postsDB", {userNewUrlParser:true})
+//mongoose.connect("", {userNewUrlParser:true})
 
 //  require route
 
