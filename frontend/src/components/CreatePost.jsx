@@ -6,18 +6,18 @@ import './CreatePost.css'
 
 function CreatePost() {
     //  create const keep track of the input
-    const [input, setInput] = useState({
+    const [text, setText] = useState({
         category: '',
         title: '',
         content: ''
 
     })
 
-    //  funtion to hanle the change in the input area
-    function handleChange(event) {
+     //funtion to hanle the change in the input area
+    // function handleChange(event) {
 
-        const {name, value};
-    }
+        
+    // }
 
     return (
         <div className='createArea container-md'>
@@ -32,7 +32,7 @@ function CreatePost() {
                     </select>
                 </div>
                 <div className="form-group">
-                    <input onChange={handleChange} name="title" value={input.title} className='title form-control' placeholder="Title" ></input>
+                    <input  name="title"  className='title form-control' placeholder="Title" ></input>
                 </div>
 
                 <div className="form-group editor">
@@ -49,7 +49,7 @@ function CreatePost() {
 
                 <div class="button col-auto">
                 <button type="button" className="cancelBtn btn-light">CANCEL</button>
-                <button onClick={handleClick} type="submit" className="submitBtn btn btn-secondary">POST</button>  
+                <button type="submit" className="submitBtn btn btn-secondary">POST</button>  
                 </div>
             </form>
         </div>)
