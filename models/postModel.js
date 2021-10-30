@@ -1,8 +1,8 @@
-const Mongoose = require("mongoose")
+const mongoose = require("mongoose")
 
 //  create a post schema
 const postsSchema = {
-    type: String,
+    category: String,
     title: String,
     content: String
 }
