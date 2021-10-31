@@ -18,6 +18,12 @@ router.route("/postCreation").post((req, res) =>{
     newPost.save();
 })
 
+//postRoute.js for config the display all the posts
+router.route("/searchPosts").get((req, res) => {
+    Post.find()
+    .then(posts => res.json(posts))
+    .catch(err => res.status(400).json("Error: "+ err));
+});
 
 
 //  export router
