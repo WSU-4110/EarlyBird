@@ -1,0 +1,11 @@
+.body {
+    background-color: #b6cebf;
+}
+.card {
+    width: 70%;
+    border: 10px #b6cebf;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+}
