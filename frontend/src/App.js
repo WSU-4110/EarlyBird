@@ -54,6 +54,9 @@ function App() {
             <Register />
           </Route>
         </Switch>
+    
+    
+     <Footer/>
       
     </Router>
      
