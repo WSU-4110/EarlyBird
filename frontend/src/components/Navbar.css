@@ -2,21 +2,17 @@
     width: 100%; 
     background-color: black;
     padding-bottom: 0px;
-    
 }
 
 .item-left{
     display: inline-block;
     padding-top: 10px;
-    font-size: 18px;
-    
-   
+    font-size: 18px;    
 }
 .item-right{
     display: inline-block;
     padding-top: 10px;
     font-size: 18px;
-    
 }
 .Home{
     text-decoration: none;
@@ -42,7 +38,6 @@
     text-decoration: none;
     padding-left: 300px;
     color: white;
-    
 }
 .register{
     text-decoration: none;
@@ -57,11 +52,60 @@
 .logo{
     width: 120px;
     height: 100px;
-    
 }
 a{
     color: white;
     text-decoration: none;
-    
 }
 
+
+ .nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: relative;
+    }
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+    .nav-menu.active {
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+    .nav-links {
+      text-align: center;
+      padding: 1rem;
+      width: 100%;
+      display: table;
+    }
+    .menu-icon {
+      display: initial;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+      position: fixed;
+      width: 30px;
+      height: 30px;
+      right: 4px;
+      top: -8px;
+      background-color: green;
+    }
+}
