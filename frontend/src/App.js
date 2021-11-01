@@ -1,8 +1,9 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import CreatePost from './components/CreatePost';
 import Home from './components/Home';
+import About from './components/About';
 import Projects from './components/Projects';
 import TechInterview from './components/TechInterview';
 import StudyRes from './components/StudyRes';
@@ -19,15 +20,16 @@ function App() {
 
   return (
     
-    
     <Router>
-       
+
        <Navbar/>
        <Search/>
-      
         <Switch>
         <Route path= "/Home">
            <Home/>
+          </Route>
+        <Route path= "/About">
+           <About/>
           </Route>
           <Route path= "/Projects">
            <Projects/>
@@ -61,10 +63,6 @@ function App() {
     </Router>
      
    );  
-   
-   
-   
-
    
 }
 
