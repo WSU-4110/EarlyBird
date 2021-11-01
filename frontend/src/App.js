@@ -20,7 +20,6 @@ function App() {
 
   return (
     
-    
     <Router>
 
        <Navbar/>
@@ -61,10 +60,6 @@ function App() {
     </Router>
      
    );  
-   
-   
-   
-
    
 }
 
