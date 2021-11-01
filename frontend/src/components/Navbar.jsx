@@ -2,50 +2,111 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import './Navbar.css';
 import Register from "./Register";
-
+import Dropdown from './Dropdown';
 
 
 
 function Navbar() {
 
-    //return Navbar here
-    return <nav class="navbar">
+    const [click, setClick] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
 
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
-<ul class="tabs">
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
 
-<a href = "./Home"><img src = "images/logo.png" alt = "logo" class = "logo"></img></a>
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
     
-    <li class="item-left">
-        <Link class="Home" to="./Home">Home</Link>
-    </li>
-    <li class="item-left">
-        <Link class="Projects" to ="./Projects">Projects</Link>
-    </li>
-    <li class="item-left">
-        <Link class="TechInterview" to ="./TechInterview">Technical Interview</Link>
-    </li>
-    <li class="item-left">
-        <Link class="StudyRes" to = "./StudyRes">Study Resources</Link>
-     </li>
-     <li class="item-left">
-        <Link class="CreatePost" to = "./CreatePost"> Create Post</Link>
-     </li>
-     <li class="item-right">
-        <Link class="Login" to = "/Login">Login</Link>
-     </li>
-     <a href ="./register" class = "item-right">/</a>
-     <li class="item-right">
-        <Link class="register" to = "/Register">Register</Link>
-        
-     </li>
+    //return Navbar here
+    return (<nav class="navbar">
+    <ul class="tabs">
 
+        <div className='menu-icon' onClick={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        </div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li class='item-left'>
+            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+            </Link>
+          </li>
 
-</ul>
+          <li class='item-left'>
+   
+          <a href = "./Home"><img src = "images/logo.png" alt = "logo" class = "logo"></img></a>
+    
+    <Link
+              to='/Home'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            > Home </Link>
+          </li>
+          <li class='item-left'>
+            <Link
+              to='/About'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            > About </Link>
+          </li>
+          <li class='item-left'>
+            <Link
+              to='/Projects'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            > Projects </Link>
+          </li>
+          <li class='item-left'>
+            <Link
+              to='/TechInterview'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            > Technical Interviews </Link>
+          </li>
+          <li class='item-left'>
+            <Link
+              to='/StudyRes'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            > Study Resources </Link>
+          </li>
+          <li class='item-left'>
+            <Link
+              to='/CreatePost'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >  Create Post </Link>
+            </li>
 
-
+            <li class='item-right'>
+            <Link
+              to='/Login'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            > Login </Link>
+          </li>
+          <li class='item-right'>
+            <Link
+              to='/Register'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            > Register </Link>
+          </li>
+        </ul>
+      </ul>
     </nav>
-
+    )
 }
 
 export default Navbar;
