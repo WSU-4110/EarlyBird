@@ -1,5 +1,4 @@
 const express = require("express");
-//const { model } = require("mongoose");
 const router = express.Router();
 const Post = require("../models/postModel");
 
@@ -17,6 +16,16 @@ router.route("/postCreation").post((req, res) =>{
 
     newPost.save();
 })
+
+//Render input into Projects tab
+
+    router.route("/proj").get((req,res) => {
+     
+       Post.find()
+            .then(postFound => res.json(postFound))
+          
+     
+     });
 
 //postRoute.js for config the display all the posts
 router.route("/searchPosts").get((req, res) => {
