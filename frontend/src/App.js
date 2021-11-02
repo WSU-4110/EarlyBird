@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import CreatePost from './components/CreatePost';
 import Home from './components/Home';
@@ -10,60 +10,61 @@ import StudyRes from './components/StudyRes';
 import Register from './components/Register';
 import Login from './components/Login';
 import Search from './components/Search';
-import Results from './components/Results';
-import Post from './components/Post';
 import Footer from './components/Footer';
-
 
 
 function App() {
 
+
+  //we will need to return:
+  //Navbar '
+  //Home page
+  //Projects page
+  //Technical Interview page
+  //Study Rescource page
+  //About page
+
+
   return (
     
+    
     <Router>
-
        <Navbar/>
        <Search/>
         <Switch>
-        <Route path= "/Home">
+        <Route path='/' exact component={Home}>
            <Home/>
           </Route>
-        <Route path= "/About">
+          <Route path='/About' exact component={About}>
            <About/>
           </Route>
-          <Route path= "/Projects">
+          <Route path='/projects' exact component={Projects}>
            <Projects/>
           </Route>
-          <Route path= "/TechInterview">
+          <Route path='/TechInterview' exact component={TechInterview}>
            <TechInterview/>
           </Route>
-          <Route path= "/StudyRes">
+          <Route path='/StudyRes' exact component={StudyRes}>
            <StudyRes/>
           </Route>
-          <Route path= "/CreatePost">
+          <Route path='/CreatePost' exact component={CreatePost}>
            <CreatePost/>
           </Route>
-          <Route path= "/Results">
-           <Results/>
-          </Route>
-          <Route path= "/Post">
-           <Post/>
-          </Route>
-          <Route path= "/Login">
+      
+          <Route path='/Login' exact component={Login}>
            <Login/>
           </Route>
-          <Route path="/Register">
+          <Route path='/Register' exact component={Register}>
             <Register />
           </Route>
         </Switch>
-    
-    
-     <Footer/>
+
+        
+           <Footer/>
       
     </Router>
      
-   );  
-   
+   );     
 }
 
 
