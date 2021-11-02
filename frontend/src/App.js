@@ -12,7 +12,6 @@ import Login from './components/Login';
 import Search from './components/Search';
 import Results from './components/Results';
 import Post from './components/Post';
-
 import Footer from './components/Footer';
 
 
