@@ -1,14 +1,11 @@
 import React, {useState} from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './Navbar.css';
 import Register from "./Register";
-
-
-
+import Dropdown from './Dropdown';
 
 function Navbar() {
-
-    const [click, setClick] = useState(false);
+  const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -29,11 +26,10 @@ function Navbar() {
       setDropdown(false);
     }
   };
-    
-    //return Navbar here
-    return (<nav class="navbar">
-    <ul class="tabs">
 
+    //return Navbar here
+    return ( <nav className='navbar'><ul class="tabs">
+      <br></br> 
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
@@ -44,10 +40,9 @@ function Navbar() {
           </li>
 
           <li class='item-left'>
-   
           <a href = "./Home"><img src = "images/logo.png" alt = "logo" class = "logo"></img></a>
-    
-    <Link
+        
+            <Link
               to='/Home'
               className='nav-links'
               onClick={closeMobileMenu}
@@ -89,6 +84,8 @@ function Navbar() {
             >  Create Post </Link>
             </li>
 
+           
+            
             <li class='item-right'>
             <Link
               to='/Login'
@@ -104,9 +101,11 @@ function Navbar() {
             > Register </Link>
           </li>
         </ul>
-      </ul>
+       </ul>
     </nav>
     )
 }
 
 export default Navbar;
+
+

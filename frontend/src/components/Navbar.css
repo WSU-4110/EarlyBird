@@ -1,65 +1,69 @@
 .navbar{
-    width: 100%; 
-    background-color: black;
-    padding-bottom: 0px;
+  width: 100%; 
+  background-color: black;
+  padding-bottom: 0px;
 }
 
 .item-left{
-    display: inline-block;
-    padding-top: 10px;
-    font-size: 18px;    
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 18px;
+  left: 0pt
 }
 .item-right{
-    display: inline-block;
-    padding-top: 10px;
-    font-size: 18px;
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 18px;
+  right: 0pt;
 }
+
 .Home{
-    text-decoration: none;
-    padding-left: 0px;
-    color: white;
+  text-decoration: none;
+  padding-left: 0px;
+  color: white;
 }
 .Projects{
-    text-decoration: none;
-    padding-left: 40px;
-    color: white;
+  text-decoration: none;
+  padding-left: 40px;
+  color: white;
 }
 .TechInterview{
-    text-decoration: none;
-    padding-left: 40px;
-    color: white;
+  text-decoration: none;
+  padding-left: 40px;
+  color: white;
 }
 .StudyRes{
-    text-decoration: none;
-    padding-left: 40px;
-    color: white;
+  text-decoration: none;
+  padding-left: 40px;
+  color: white;
 }
 .Login{
-    text-decoration: none;
-    padding-left: 300px;
-    color: white;
+  text-decoration: none;
+  padding-left: 400px;
+  color: white;
+  
 }
 .register{
-    text-decoration: none;
-    padding-left: 0px;
-    color: white;
+  text-decoration: none;
+  padding-left: 0px;
+  color: white;
 }
 .CreatePost{
-    text-decoration: none;
-    padding-left: 40px;
-    color: white;
+  text-decoration: none;
+  padding-left: 40px;
+  color: white;
 }
+
 .logo{
-    width: 120px;
-    height: 100px;
+  width: 120px;
+  height: 100px;
 }
 a{
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-
- .nav-links {
+  .nav-links {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -69,6 +73,7 @@ a{
     .NavbarItems {
       position: relative;
     }
+  
     .nav-menu {
       display: flex;
       flex-direction: column;
@@ -80,6 +85,7 @@ a{
       opacity: 1;
       transition: all 0.5s ease;
     }
+  
     .nav-menu.active {
       background: #242222;
       left: 0;
@@ -87,12 +93,14 @@ a{
       transition: all 0.5s ease;
       z-index: 1;
     }
+  
     .nav-links {
       text-align: center;
       padding: 1rem;
       width: 100%;
       display: table;
     }
+  
     .menu-icon {
       display: initial;
       position: absolute;
@@ -108,4 +116,4 @@ a{
       top: -8px;
       background-color: green;
     }
-}
+  }  
