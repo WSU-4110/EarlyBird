@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
-import Post from './Post';
+import Posts from './Posts';
 
 
 function Results() {
@@ -34,17 +34,7 @@ function Results() {
   
   return (
     <div>
-      {posts.map((postItem, index) => {
-        return (
-          <Post
-            key={index}
-            _id={postItem._id}
-            title={postItem.title}
-            category={postItem.category}
-            content={postItem.content}
-          />
-        );
-      })}
+      <Posts posts={posts}/>
     </div>
   );
 }
