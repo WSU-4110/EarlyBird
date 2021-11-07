@@ -6,6 +6,8 @@ import axios from 'axios';
 import './CreatePost.css'
 
 function CreatePost() {
+    
+
     //  create const keep track of the input
     const [input, setInput] = useState({
         category: '',

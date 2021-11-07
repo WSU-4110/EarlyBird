@@ -1,39 +1,34 @@
-import React, { useEffect, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import axios from 'axios';
 import './Projects.css'
+import Category from  "./Category.jsx";
 
-var category;
 
+    
 function Projects() {
-
-    const [projectPost, setProjectPost] = useState([{
+    const [input, setInput] = useState([{
         category: '',
         title: '',
         content: ''
     }])
+
+
     
     useEffect(()=> {
         const post = async() => {
          const response = await axios('http://localhost:3001/proj')
-         setProjectPost(response.data);
+         setInput(response.data);
          };
          post();
       });
-      
-      
-     const Posts = projectPost.map((p) => {
-          return <div>
-          <h2>{p.title}</h2>
-          <p>{p.content}</p>
-          </div>  
-      })
     
     
  return <div class = "projectPosts">
                     <h1> Projects </h1>
-                    {Posts}
+                    {Category}
 
                     </div>
+
 } 
 
 export default Projects;
