@@ -13,6 +13,14 @@ import Search from './components/Search';
 import Footer from './components/Footer';
 
 
+/**Imports for public and private */
+import PublicPage from './PublicPage';
+import PublicRouter from './PublicRouter';
+import PrivatePage from './PrivatePage';
+import PrivateRouter from './PrivateRoute';
+
+
+
 function App() {
 
 
