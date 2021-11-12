@@ -1,9 +1,32 @@
-.link{
-    padding-top: 10px;
-    padding-left: 50px;
-}
 
-.image{
-    padding-left:60px;
-    float: left;
-}
+  .column{
+      padding-left:10px;
+  }
+  .image{
+      float: left;
+      padding-left: 70px;
+  }
+  @media only screen and (max-width: 800px){
+    img.test1{
+        width : 50%;
+        height : auto;
+        padding-left:30px;
+        float:center;
+    }
+    img.test2{
+        width : 50%;
+        height : auto;
+        padding-left:30px;
+        float:center;
+    }
+    img.test3{
+        width : 50%;
+        height : auto;
+        padding-left:30px;
+        float:center;
+    }
+  }
+
+  
+
+
