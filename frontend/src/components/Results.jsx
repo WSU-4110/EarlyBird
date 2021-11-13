@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router';
 import axios from 'axios';
 import Post from './Post';
 
@@ -11,7 +11,7 @@ function Results() {
 
   // set the search term that pass from the search component
   useEffect(() => {
-    console.log(location.state)
+    //console.log(location.state)
     setTerm(location.state.searchTerm)
   },[]);
 

@@ -11,6 +11,7 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Search from './components/Search';
 import Footer from './components/Footer';
+import Results from './components/Results';
 
 
 function App() {
@@ -49,6 +50,10 @@ function App() {
           </Route>
           <Route path='/CreatePost' exact component={CreatePost}>
            <CreatePost/>
+          </Route>
+          
+          <Route path= "/Results">
+           <Results/>
           </Route>
       
           <Route path='/Login' exact component={Login}>
