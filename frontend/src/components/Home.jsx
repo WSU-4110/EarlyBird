@@ -1,6 +1,6 @@
 import React from "react";
 import './Home.css'
- 
+
 //The Home function shows the three images for Projects, Study Resources, Create Posts pages. When the user clicks on the images. It will take them to those pages.
 function Home() {
    return <div>

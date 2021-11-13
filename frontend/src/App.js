@@ -11,6 +11,13 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Search from './components/Search';
 import Footer from './components/Footer';
+import Comments from './components/Comments';
+
+/**Imports for public and private */
+import PublicPage from './components/PublicPage';
+import PublicRouter from './components/PublicRouter';
+import PrivatePage from './components/PrivatePage';
+import PrivateRouter from './components/PrivateRouter';
 
 
 function App() {
