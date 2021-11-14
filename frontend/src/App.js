@@ -9,6 +9,7 @@ import TechInterview from './components/TechInterview';
 import StudyRes from './components/StudyRes';
 import Register from './components/Register';
 import Login from './components/Login';
+import LgIn from './components/LgIn';
 import Search from './components/Search';
 import Footer from './components/Footer';
 import Comments from './components/Comments';
@@ -58,8 +59,8 @@ function App() {
            <CreatePost/>
           </Route>
       
-          <Route path='/Login' exact component={Login}>
-           <Login/>
+          <Route path='/LgIn' exact component={LgIn}>
+           <LgIn/>
           </Route>
           <Route path='/Register' exact component={Register}>
             <Register />

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './Navbar.css';
 import Register from "./Register";
 import Dropdown from './Dropdown';
-
+import LgIn from './LgIn';
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -88,7 +88,7 @@ function Navbar() {
             
             <li class='item-right'>
             <Link
-              to='/Login'
+              to='/LgIn'
               className='nav-links'
               onClick={closeMobileMenu}
             > Login </Link>

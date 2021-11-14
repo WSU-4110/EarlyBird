@@ -1,9 +1,10 @@
 import React from 'react';
 import { useGoogleAuth } from './ggleAuth';
 
+
 const LgIn = () => {
 
-    const { signIn } = useGoogleAuth();
+    const signIn = useGoogleAuth();
 
     return (
         <button onClick={signIn}>Login</button>
