@@ -60,6 +60,9 @@ function App() {
           <Route path='/Login' exact component={Login}>
            <Login/>
           </Route>
+          <Route path='/Logout' exact component={Logout}>
+           <Logout/>
+          </Route>
           <Route path='/Register' exact component={Register}>
             <Register />
           </Route>
