@@ -19,7 +19,7 @@ function Login() {
     return <div class = "signIn">
         <GoogleLogin 
                  clientId={clientId}
-                button ="signIn" onSuccess ={responseGoogle}
+                buttonText="Login"
                 onSuccess={onSuccess}
                 onFailure={onFailure}
                 isSignedIn={true}
