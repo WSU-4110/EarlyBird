@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import './Navbar.css';
 import Register from "./Register";
+import Login from './Login';
+import Logout from './Logout';
 import Dropdown from './Dropdown';
 
 function Navbar() {
@@ -92,6 +94,13 @@ function Navbar() {
               className='nav-links'
               onClick={closeMobileMenu}
             > Login </Link>
+          </li>
+          <li class='item-right'>
+            <Link
+              to='/Logout'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            > Logout </Link>
           </li>
           <li class='item-right'>
             <Link
