@@ -1,23 +1,29 @@
 import React from "react";
 import { GoogleLogin } from "react-google-login";
 import './Login.css';
+import { refreshTokenSetup } from './refreshTokenSetup';
 
-
-const responseGoogle= response => {
-    console.log(response);
-    
-  
-    
-  }
-
+const clientId = '874934368638-v7dtscnojaffh40c091bd0msjl0j5idl.apps.googleusercontent.com';
 
 function Login() {
+    
+    const onSuccess = (res) => {
+         console.log(res.profileObj);
+        refreshTokenSetup(res);
+    };
+
+    const onFailure = (res) => {
+        console.log('[Login Failed]', res);
+    };
 
     return <div class = "signIn">
-        <GoogleLogin clientId = "874934368638-v7dtscnojaffh40c091bd0msjl0j5idl.apps.googleusercontent.com" 
+        <GoogleLogin 
+                 clientId={clientId}
                 button ="signIn" onSuccess ={responseGoogle}
-            onFailure={responseGoogle} />
-      
+                onSuccess={onSuccess}
+                onFailure={onFailure}
+                isSignedIn={true}
+        />   
     </div>
 }
 
