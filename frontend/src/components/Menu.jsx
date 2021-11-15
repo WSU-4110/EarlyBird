@@ -34,7 +34,13 @@ export const Menu = [
     title: 'Login',
     path: '/Login',
     cName: 'dropdown-link'
-},{
+},
+    {
+        title: 'Logout',
+        path: '/Logout',
+        cName: 'dropdown-link'
+    },
+{
     title: 'Register',
     path: '/Register',
     cName: 'dropdown-link'
