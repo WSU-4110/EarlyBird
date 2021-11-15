@@ -9,6 +9,7 @@ import TechInterview from './components/TechInterview';
 import StudyRes from './components/StudyRes';
 import Register from './components/Register';
 import Login from './components/Login';
+import Logout from './components/Logout';
 import Search from './components/Search';
 import Footer from './components/Footer';
 import Results from './components/Results';
