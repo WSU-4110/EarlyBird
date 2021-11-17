@@ -40,7 +40,7 @@ function Navbar() {
           </li>
 
           <li class='item-left'>
-          <a href = "./Home"><img src = "images/logo.png" alt = "logo" class = "logo"></img></a>
+          <a href = "./"><img src = "images/logo.png" alt = "logo" class = "logo"></img></a>
         
             <Link
               to='/'
