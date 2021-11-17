@@ -43,7 +43,7 @@ function Navbar() {
           <a href = "./Home"><img src = "images/logo.png" alt = "logo" class = "logo"></img></a>
         
             <Link
-              to='/Home'
+              to='/'
               className='nav-links'
               onClick={closeMobileMenu}
             > Home </Link>
