@@ -36,7 +36,7 @@ function Navbar() {
   const location = useLocation();
 
   const logout = () => {
-    dispatch({type: 'LOGOUT'});
+    dispatch({ type: 'LOGOUT' });
 
     history.push('/');
 
@@ -49,7 +49,7 @@ function Navbar() {
     const token = user?.token;
 
     setUser(JSON.parse(localStorage.getItem('profile')));
-  },[location]);
+  }, [location]);
 
 
 
@@ -115,51 +115,51 @@ function Navbar() {
         {
           user ? (
             <div>
-            <li class='item-right'>
-                <Link
-                  to='/'
-                  className='nav-links'
-                  onClick={logout}
-                > Logout </Link>
-              </li>
-              <li class='item-right'>
-                <Link
-                  to='/Logout'
-                  className='nav-links'
-                > User's Posts </Link>
-              </li>
-            </div>
+                  <li class='item-right'>
+                    <Link
+                      to='/'
+                      className='nav-links'
+                      onClick={logout}
+                    > Logout </Link>
+                  </li>
+                  <li class='item-right'>
+                    <Link
+                      to='/Logout'
+                      className='nav-links'
+                    > User's Posts </Link>
+                  </li>
+                </div>
 
-          ) : (
-            <div>
-              <li class='item-right'>
-                <Link
-                  to='/Login'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                > Login </Link>
-              </li>
-              {/* <li class='item-right'>
+                ) : (
+                <div>
+                  <li class='item-right'>
+                    <Link
+                      to='/Login'
+                      className='nav-links'
+                      onClick={closeMobileMenu}
+                    > Login </Link>
+                  </li>
+                  {/* <li class='item-right'>
                 <Link
                   to='/Register'
                   className='nav-links'
                   onClick={closeMobileMenu}
                 > Register </Link>
               </li> */}
-            </div>
+                </div>
 
-          )
+                )
         }
 
-      </div>
+              </div>
 
 
-    </ul>
-  </ul>
+              </ul>
+            </ul>
   </nav>
-  )
+      )
 }
 
-export default Navbar;
+      export default Navbar;
 
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import './Projects.css'
+import Post from './Post';
 
 var category;
 
@@ -14,18 +15,27 @@ function Projects() {
     
     useEffect(()=> {
         const post = async() => {
-         const response = await axios('http://localhost:3001/proj')
-         setProjectPost(response.data);
+         const response = await axios.get('http://localhost:3001/proj')
+         .then(response => {
+           setProjectPost(filterData(response.data));
+         })
          };
          post();
       });
+
+      function filterData(inputs, key){
+        key = 'Project'
+        return inputs.filter((input) => 
+        input.category.includes(key));
+      }
+      
       
       
      const Posts = projectPost.map((p) => {
-          return <div>
-          <h2>{p.title}</h2>
-          <p>{p.content}</p>
-          </div>  
+          return <Post
+          title = {p.title}
+          content = {p.content}
+          />  
       })
     
     
