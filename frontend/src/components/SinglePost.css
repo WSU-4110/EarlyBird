@@ -1,0 +1,37 @@
+.body {
+    background-color: #b6cebf;
+}
+.singlePost {
+    width: 70%;
+    border: 10px #b6cebf;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 20px;
+}
+.commentBt {
+    background-color: Transparent;    
+    background-repeat:no-repeat;
+    border: none;  
+    color: darkgray;
+    font-weight: 200;
+    padding-right: 30px;
+    border-radius: 7px;
+}
+.commentBt:hover{
+    background-color:#b6cebf;
+    color: black;
+}
+.singleComment{
+    width: 67%;
+    border: 10px #b6cebf;
+    margin-left: 250px;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 20px;
+}
+.commentTitle {
+    margin-top: 50px;
+    margin-left: 250px;
+}

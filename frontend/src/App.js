@@ -12,7 +12,7 @@ import Login from './components/Login';
 import Search from './components/Search';
 import Footer from './components/Footer';
 import Results from './components/Results';
-
+import SinglePost from './components/SinglePost';
 
 function App() {
 
@@ -56,6 +56,11 @@ function App() {
            <Results/>
           </Route>
       
+          <Route path= "/SinglePost">
+           <SinglePost/>
+          </Route>
+
+
           <Route path='/Login' exact component={Login}>
            <Login/>
           </Route>

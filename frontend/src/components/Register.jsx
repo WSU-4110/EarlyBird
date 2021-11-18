@@ -17,9 +17,10 @@ function Register() {
     return(
     <div class = "signIn">
         
-    <GoogleLogin clientId = "874934368638-v7dtscnojaffh40c091bd0msjl0j5idl.apps.googleusercontent.com" 
-                button ="Sign in" onSuccess ={responseGoogle}
-            onFailure={responseGoogle} />
+    <GoogleLogin 
+    clientId = "874934368638-v7dtscnojaffh40c091bd0msjl0j5idl.apps.googleusercontent.com"          
+    button ="Sign in" onSuccess ={responseGoogle}
+    onFailure={responseGoogle} />
 
 
 

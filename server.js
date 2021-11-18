@@ -16,6 +16,7 @@ mongoose.connect("mongodb+srv://EarlyBird-admin:CSCProject-EarlyBird@cluster0.lu
 
 //  require route
 app.use("/", require("./routes/postRoute"));
+app.use("/user", require("./routes/users"));
 
 
 
