@@ -122,11 +122,13 @@ function Navbar() {
                       onClick={logout}
                     > Logout </Link>
                   </li>
+                 
                   <li class='item-right'>
-                    <Link
-                      to='/Logout'
-                      className='nav-links'
-                    > User's Posts </Link>
+                  <div class = "dropdown">
+                  <img src="images/profile.png" alt="profile" class="profile"></img>
+                  <div class= "dropdown-content">
+                    <a href = "./UserPosts">My Posts</a></div>
+                    </div>
                   </li>
                 </div>
 
