@@ -27,6 +27,14 @@ router.route("/postCreation").post((req, res) =>{
      
      });
 
+     router.route("/userPo").get((req,res) => {
+     
+        Post.find()
+             .then(postFound => res.json(postFound))
+           
+      
+      });
+
 //postRoute.js for config the display all the posts
 router.route("/searchPosts").get((req, res) => {
     Post.find()
