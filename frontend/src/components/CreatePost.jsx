@@ -30,6 +30,8 @@ function CreatePost() {
         }
     }, [location]);
 
+  
+
 
     //funtion to handle the change in the input area
     function handleChange(event) {

@@ -13,7 +13,7 @@ import Search from './components/Search';
 import Footer from './components/Footer';
 import Results from './components/Results';
 import SinglePost from './components/SinglePost';
-import Profile from './components/Profile';
+
 import UserPosts from './components/UserPosts';
 
 function App() {
@@ -70,9 +70,7 @@ function App() {
             <Register />
           </Route>
 
-          <Route path='/Profile' exact component={Profile}>
-            <Profile />
-          </Route>
+          
 
           <Route path='/UserPosts' exact component={UserPosts}>
             <UserPosts />

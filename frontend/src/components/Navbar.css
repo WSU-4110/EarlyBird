@@ -81,7 +81,7 @@
 }
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .profile {background-color: #b0d1b0;}
+.dropdown:hover .profile {background-color: #b0d1b0; }
 a{
   color: white;
   text-decoration: none;

@@ -18,21 +18,17 @@ const [projectPost, setProjectPost] = useState([{
     content: ''
 }])
 
-useEffect(()=> {
-    const post = async() => {
-     const response = await axios.get('http://localhost:3001/userPo')
-     .then(response => {
-       setProjectPost(filterData(response.data));
-     })
-     };
-     post();
-  });
-
-// immediately fetch the user data from local storage
 const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
-const dispatch = useDispatch();
-const history = useHistory();
-const location = useLocation();
+
+useEffect(()=> {
+  const post = async() => {
+   const response = await axios.get('http://localhost:3001/userPo')
+   .then(response => {
+     setProjectPost(filterData(response.data));
+   })
+   };
+   post();
+});
 
 
 const Posts = projectPost.map((p) => {
@@ -44,7 +40,7 @@ const Posts = projectPost.map((p) => {
 })
 
 function filterData(inputs, key){
-    key = user
+    key = 'Project'
     return inputs.filter((input) => 
     input.category.includes(key));
   }
@@ -54,7 +50,6 @@ function filterData(inputs, key){
 
     return <div>
        {Posts}
-      
         
     </div>
 
