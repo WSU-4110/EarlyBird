@@ -1,3 +1,5 @@
+import {commentPost} from '../controllers/user.js';
+
 const express = require("express");
 const router = express.Router();
 
@@ -7,3 +9,5 @@ router.post("/signin", signin);
 router.post("/signup", signup);
 
 module.exports = router;
+
+router.post("/:id/commentPost", auth, commentPost);

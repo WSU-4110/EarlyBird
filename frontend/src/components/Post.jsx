@@ -1,7 +1,10 @@
 import React from "react";
 import './Post.css';
+import Comments from './Comments';
 
 function Post(props) {
+    const recommendedPosts = [props].filter(({ _id }) => _id !== props._id);
+
     return (
         <div className="card">
             <div className="card-body">
@@ -11,6 +14,8 @@ function Post(props) {
             </div>
         </div>
     );
+        
+    <Comments props={props}/>
 }
 
 export default Post;

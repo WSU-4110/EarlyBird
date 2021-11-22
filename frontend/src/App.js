@@ -13,7 +13,7 @@ import Search from './components/Search';
 import Footer from './components/Footer';
 import Results from './components/Results';
 import SinglePost from './components/SinglePost';
-
+import Comments from './components/Comments';
 function App() {
 
 
@@ -66,6 +66,9 @@ function App() {
           </Route>
           <Route path='/Register' exact component={Register}>
             <Register />
+          </Route>
+          <Route path='/Comments' exact component={Comments}>
+            <Comments />
           </Route>
         </Switch>
 

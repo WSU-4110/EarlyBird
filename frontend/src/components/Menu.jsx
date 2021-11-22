@@ -38,5 +38,10 @@ export const Menu = [
     title: 'Register',
     path: '/Register',
     cName: 'dropdown-link'
+},
+{
+    title: 'Comments',
+    path: '/Comments',
+    cName: 'dropdown-link'
 }
 ]
