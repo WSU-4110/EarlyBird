@@ -26,6 +26,14 @@ router.route("/postCreation").post((req, res) =>{
           
      
      });
+     router.route("/TechInter").get((req,res) => {
+     
+        Post.find()
+             .then(postFound => res.json(postFound))
+           
+      
+      });
+
 
      router.route("/userPo").get((req,res) => {
      
