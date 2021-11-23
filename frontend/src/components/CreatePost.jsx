@@ -61,6 +61,8 @@ function CreatePost() {
             content: input.content
         }
 
+    
+
 
         axios
             .post('http://localhost:3001/postCreation', newPost)
@@ -72,6 +74,10 @@ function CreatePost() {
             });
 
     }
+
+    function handleRoute() {
+        history.push("/");
+        }
 
     return (
         <div className='createArea container-md'>
@@ -97,7 +103,7 @@ function CreatePost() {
 
 
                 <div  class="button col-auto">
-                    <button type="button" className="cancelBtn btn-light">CANCEL</button>
+                    <button onClick={handleRoute} type="button" className="cancelBtn btn-light">CANCEL</button>
                     <button onClick={handleClick} type="submit" className="submitBtn btn btn-secondary">POST</button>
                 </div>
             </form>
