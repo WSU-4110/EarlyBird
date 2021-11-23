@@ -102,7 +102,7 @@ function CreatePost() {
                 </div>
 
 
-                <div  class="button col-auto">
+                <div  class=" col-auto">
                     <button onClick={handleRoute} type="button" className="cancelBtn btn-light">CANCEL</button>
                     <button onClick={handleClick} type="submit" className="submitBtn btn btn-secondary">POST</button>
                 </div>
