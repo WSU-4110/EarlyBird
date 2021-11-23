@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import axios from 'axios';
-import Post from './Post';
+import UserInfo from "./UserInfo";
 
 
 function UserPosts() {
@@ -12,44 +12,37 @@ function UserPosts() {
 
 //})
 
-const [projectPost, setProjectPost] = useState([{
-    category: '',
-    title: '',
-    content: ''
+const [user, setUser] = useState([{
+    name: '',
+    email: ''
 }])
 
-const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
+
 
 useEffect(()=> {
-  const post = async() => {
+  const info = async() => {
    const response = await axios.get('http://localhost:3001/userPo')
    .then(response => {
-     setProjectPost(filterData(response.data));
+     setUser(response.data);
    })
    };
-   post();
+   info();
 });
 
 
-const Posts = projectPost.map((p) => {
-    return <Post
-   category = {p.category}
-    title = {p.title}
-    content = {p.content}
-    />  
+const Info = user.map((p) => {
+    return <UserInfo
+   name = {p.name}
+    email = {p.email}
+    ></UserInfo>
+    
 })
-
-function filterData(inputs, key){
-    key = 'Project'
-    return inputs.filter((input) => 
-    input.category.includes(key));
-  }
 
 
 
 
     return <div>
-       {Posts}
+       {Info}
         
     </div>
 

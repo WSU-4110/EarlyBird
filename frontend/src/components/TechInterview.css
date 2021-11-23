@@ -1,3 +1,8 @@
-.info {
-   background-color: white;
-  }
+
+.techInterviewPosts{
+   margin-left: 550px;
+   width: 1335px;
+   border: 15px solid black;
+   padding: 50px;
+   margin: 20px;
+}

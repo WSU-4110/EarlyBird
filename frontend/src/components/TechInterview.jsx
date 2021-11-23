@@ -1,11 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
+import Post from './Post';
 import './TechInterview.css';
 function TechInterview(){
-    return <div>
-        <div class = "info">
-            <h1>Technical Interview</h1>
-            <p>Here you will be able to find tips and tricks to help you prepare with youe Technical Interview</p>
-        </div>
-    </div>
-}
+    
+        
+        const [projectPost, setProjectPost] = useState([{
+            category: '',
+            title: '',
+            content: ''
+        }])
+       
+        
+        useEffect(()=> {
+            const post = async() => {
+             const response = await axios.get('http://localhost:3001/TechInter')
+             .then(response => {
+               setProjectPost(filterData(response.data));
+             })
+             };
+             post();
+          });
+    
+          function filterData(inputs, key){
+            key = 'Technical Interview'
+            return inputs.filter((input) => 
+            input.category.includes(key));
+            
+          }
+          
+          
+          
+         const Posts = projectPost.map((p) => {
+              return <Post
+              title = {p.title}
+              content = {p.content}
+              />  
+          })
+        
+        
+     return <div class = "techInterviewPosts">
+                        <h1 >Technical Interviews</h1>
+                        {Posts}
+    
+                        </div>
+    } 
+    
 export default TechInterview;

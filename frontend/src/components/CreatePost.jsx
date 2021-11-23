@@ -7,7 +7,11 @@ import axios from 'axios';
 //import ReactHtmlParser, {precessNodes, convertNodeToElement, htmlparser2} from 'react-html-parser';
 import './CreatePost.css'
 
+
 function CreatePost() {
+
+    
+
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
     const history = useHistory();
     const location = useLocation();
@@ -34,6 +38,7 @@ function CreatePost() {
 
 
     //funtion to handle the change in the input area
+
     function handleChange(event) {
         const { name, value } = event.target;
 
@@ -45,6 +50,7 @@ function CreatePost() {
         })
 
     }
+    
 
     // function to handle the post click
     function handleClick(event) {
@@ -71,7 +77,7 @@ function CreatePost() {
         <div className='createArea container-md'>
             <h4>Create a post</h4>
             <form className="row g-3">
-                <div className="form-group col-md-6">
+                <div data-testid="test1" className="form-group col-md-6">
                     <select onChange={handleChange} name="category" value={input.category} className="selections form-select">
                         <option selected>Choose a post type</option>
                         <option>Project</option>
@@ -90,7 +96,7 @@ function CreatePost() {
                 </div>
 
 
-                <div class="button col-auto">
+                <div  class="button col-auto">
                     <button type="button" className="cancelBtn btn-light">CANCEL</button>
                     <button onClick={handleClick} type="submit" className="submitBtn btn btn-secondary">POST</button>
                 </div>
@@ -98,4 +104,5 @@ function CreatePost() {
         </div>)
 
 }
+
 export default CreatePost;

@@ -6,7 +6,7 @@ const Footer = () => (
 
         <div className="footer">
         
-        <table class="center">
+        <table className="center">
         <tr>
            <th>Contact Us</th>
            <th>Top Projects</th>
@@ -16,7 +16,8 @@ const Footer = () => (
         <td>  
               We are Online!<br></br>
               Phone: nice try<br></br>
-              <a href="mailto:csc4110EarlyBird@gmail.com?subject=Mail fron Website">Email</a>
+              <a  data-testid="test1" href="mailto:csc4110EarlyBird@gmail.com?subject=Mail from Website">
+                 Email</a>
         </td> 
 
         <td>
