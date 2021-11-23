@@ -13,10 +13,10 @@ const Footer = () => (
         </tr>
 
         <tr>
-        <td>  
+        <td data-testid="test1">  
               We are Online!<br></br>
               Phone: nice try<br></br>
-              <a href="mailto:csc4110EarlyBird@gmail.com?subject=Mail fron Website">Email</a>
+              <a  href="mailto:csc4110EarlyBird@gmail.com?subject=Mail fron Website">Email</a>
         </td> 
 
         <td>
