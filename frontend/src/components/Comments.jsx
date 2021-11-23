@@ -17,7 +17,7 @@ const Comments = ({ props }) => {
    const handleClick = async () =>{
         const finalComment = `${user.result.name}: ${comment}`
 
-        const newComments = await dispatch(commentPost(`${user?.result?.name}: ${comment}`,props._id));
+        const newComments = await dispatch(commentPost(`${user?.result?.name}: ${comment}`));
 
         setComments(newComments);
         setComment('');
