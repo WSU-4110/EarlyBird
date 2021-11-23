@@ -1,5 +1,6 @@
 import React from "react";
 import './Post.css';
+import Comments from './Comments';
 
 function Post(props) {
     return (
@@ -11,6 +12,9 @@ function Post(props) {
             </div>
         </div>
     );
+
+    <Comments props={props}/>
+
 }
 
 export default Post;
