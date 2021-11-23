@@ -45,7 +45,6 @@ function filterData(inputs, key){
     input.category.includes(key));
     
   }
-    
   test('FilterData', () =>{
          expect(filterData.key = 'Technical Interview');
         
