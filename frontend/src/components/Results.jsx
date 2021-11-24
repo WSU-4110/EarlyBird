@@ -38,6 +38,7 @@ function Results() {
       {posts.map((postItem, index) => {
         return (
           <Post
+            data-testid="post"
             key={index}
             _id={postItem._id}
             title={postItem.title}

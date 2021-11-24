@@ -25,11 +25,11 @@ function Search() {
 
 return (
   <div>
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid justify-content-end">
-        <form class="d-flex">
-          <input onChange={handleChange} value={searchTerm} class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button onClick={handleClick} class="btn btn-outline-success">Search</button>
+    <nav className="navbar navbar-light bg-light">
+      <div className="container-fluid justify-content-end">
+        <form className="d-flex">
+          <input data-testid="key" onChange={handleChange} value={searchTerm} className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button data-testid="btn" onClick={handleClick} className="btn btn-outline-success">Search</button>
         </form>
       </div>
     </nav>
