@@ -7,7 +7,7 @@ var category;
 
 function Projects() {
 
-    const [projectPost, setProjectPost] = useState([{
+    const  [projectPost, setProjectPost] = useState([{
         category: '',
         title: '',
         content: ''
@@ -27,7 +27,7 @@ function Projects() {
         key = 'Project'
         return inputs.filter((input) => 
         input.category.includes(key));
-      }
+      }2
       
       
       
@@ -38,12 +38,13 @@ function Projects() {
           />  
       })
     
-    
- return <div class = "projectPosts">
-                    <h1> Projects </h1>
-                    {Posts}
+    function projects(){
+      return <div class = "projectPosts">
+      <h1> Projects </h1>
 
-                    </div>
+      </div>
+    }
+ 
 } 
 
 export default Projects;
