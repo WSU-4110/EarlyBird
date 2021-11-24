@@ -18,6 +18,8 @@
    
 import * as actionType from '../constants/actionTypes';
 
+
+import { COMMENT} from '../constants/actionTypes';
 const authReducer = (state = { authData: null }, action) => {
   switch (action.type) {
     case actionType.AUTH:
@@ -30,6 +32,22 @@ const authReducer = (state = { authData: null }, action) => {
       return { ...state, authData: null, loading: false, errors: null };
     default:
       return state;
+  }
+};
+
+const authReduce = (state = { isLoading: true, posts: []}, action) =>{
+  switch (action.type){
+    case COMMENT:
+      return{
+        ...state,
+        props: state.props.map((props) => {
+            if(props._id==+action.payload._id){
+              return action.payload;
+            }
+
+            return props;
+        })
+      }
   }
 };
 

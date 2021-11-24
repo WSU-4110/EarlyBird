@@ -110,6 +110,14 @@ function Navbar() {
         >  Create Post </Link>
       </li>
 
+      <li class='item-right'>
+                    <Link
+                      to='/Comments'
+                      className='nav-links'
+                      onClick={closeMobileMenu}
+                    > Comments </Link>
+                  </li>
+
       {/* if user exist show user infor and logout, if it not, show login and register */}
       <div>
         {

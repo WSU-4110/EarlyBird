@@ -1,6 +1,6 @@
-
 import { AUTH } from '../constants/actionTypes';
 import * as api from '../api/index.jsx';
+import { COMMENT } from '../constants/actionTypes';
 
 export const signin = (formData, router) => async (dispatch) => {
   try {
@@ -21,6 +21,18 @@ export const signup = (formData, router) => async (dispatch) => {
     dispatch({ type: AUTH, data });
 
     router.push('/');
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const commentPost = (value, id) => async (dispatch) => {
+  try {
+    const { data } = await api.comment(value, id);
+
+    dispatch({ type: COMMENT, payload: data });
+
+    return data.comments;
   } catch (error) {
     console.log(error);
   }
