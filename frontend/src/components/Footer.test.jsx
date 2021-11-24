@@ -8,7 +8,7 @@ test('testing email' , () => {
     render(<Footer />)
   
     //expect(screen.getByTestId('test1')).toHaveAttribute('href',
-    //"mailto:csc4110EarlyBird@gmail.com?subject=Mail from Website");
+   // "mailto:csc4110EarlyBird@gmail.com?subject=Mail from Website");
     expect('"mailto:csc4110EarlyBird@gmail.com?subject=Mail from Website"').toMatch(/@gmail.com/);
 })
 });
