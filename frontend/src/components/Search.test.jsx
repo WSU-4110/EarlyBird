@@ -28,3 +28,7 @@ const cl = () => [isClick, setClick] = useState(false);
 test("testing click", () => {
     expect(cl.isClick == false);
 })
+
+test("sign up and sign in shows up", () =>{
+    expect( Search.button=" Search ");
+});
