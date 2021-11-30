@@ -27,7 +27,15 @@ router.route("/postCreation").post((req, res) =>{
      
      });
 
-     router.route("/TechInter").get((req,res) => {
+     router.route("/StudyRes").get((req,res) => {
+     
+        Post.find()
+             .then(postFound => res.json(postFound))
+           
+      
+      });
+
+     router.route("/TechInterview").get((req,res) => {
      
         Post.find()
              .then(postFound => res.json(postFound))
