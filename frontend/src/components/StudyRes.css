@@ -1,16 +1,7 @@
-.createStudResPost {
-    position: fixed;
-    background-color: #a4c2af;
-    color:white;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-left: 1250px;
-    font-weight: 150;
-
+.StudyResPosts{
+    margin-left: 550px;
+    width: 1335px;
+    border: 15px solid black;
+    padding: 50px;
+    margin: 20px;
 }
-.createStudResPost:hover {
-    background-color: black;
-    color: white;
-  }
