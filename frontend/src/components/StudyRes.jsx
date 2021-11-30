@@ -1,26 +1,41 @@
-import React from "react";
-import './StudyRes.css';
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
+import './StudyRes.css'
+
+var category;
 
 
+function StudyRes() {
 
-
-function showForm(){
-    document.getElementById('show').innerHTML= document.getElementsById("postButton")
-
+    const [StudyResPost, setStudyResPost] = useState([{
+        category: '',
+        title: '',
+        content: ''
+    }])
+    
+    useEffect(()=> {
+        const post = async() => {
+         const response = await axios('http://localhost:3001/StudyRes')
+         setStudyResPost(response.data);
+         };
+         post();
+      });
       
       
      const Posts = StudyResPost.map((p) => {
-          return <Post
-          title = {p.title}
-          content = {p.content}
-          />  
+          return <div>
+          <h2>{p.title}</h2>
+          <p>{p.content}</p>
+          </div>  
       })
     
-              
-                    
-
-              
+    
+ return <div class = "StudyResPosts">
+                    <h1> Study Resources</h1>
+                    {Posts}
 
                     </div>
-}
+} 
+
+
 export default StudyRes;
