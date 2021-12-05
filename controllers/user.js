@@ -46,7 +46,7 @@ const secret = 'test';
   }
 };
 
-const userProfile = asyncHandler(async (req, res) => {
+const userProfile = async (req, res) => {
   const user = await User.findById(req.user._id);
 
   if (user) {
@@ -66,5 +66,5 @@ const userProfile = asyncHandler(async (req, res) => {
     res.status(404);
     throw new Error("User Not Found");
   }
-});
+};
 module.exports = {signin, signup, userProfile};
