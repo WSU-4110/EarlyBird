@@ -135,7 +135,7 @@ function Navbar() {
                   <div class = "dropdown">
                   <img src="images/profile.png" alt="profile" class="profile"></img>
                   <div class= "dropdown-content">
-                    <a href = "./UserPosts">My Posts</a></div>
+                    <a href = "./UserProfile">My Profile</a></div>
                     </div>
                   </li>
                 </div>

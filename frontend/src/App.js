@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 import Results from './components/Results';
 import SinglePost from './components/SinglePost';
 import Comments from './components/Comments';
-import UserPosts from './components/UserPosts';
+import UserProfile from './components/UserProfile';
 
 function App() {
 
@@ -72,8 +72,8 @@ function App() {
 
           
 
-          <Route path='/UserPosts' exact component={UserPosts}>
-            <UserPosts />
+          <Route path='/UserProfile' exact component={UserProfile}>
+            <UserProfile />
           </Route>
 
           <Route path='/Comments' exact component={Comments}>

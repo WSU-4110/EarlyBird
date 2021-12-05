@@ -1,0 +1,66 @@
+*{
+   
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card1{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    
+    background: rgba(0, 0, 0, 0.055);;
+
+}
+
+.image1{
+    display: inline-block;
+    padding: 0.02px;
+   margin-left: 10px;
+    border-radius: 50%;
+    
+    
+}
+
+.image1 img{
+   
+    width: 140px;
+    height: 140px;
+    margin-top: 1px;
+    margin-left: 120px;
+}
+
+.name{
+    color: black;
+    font-size:30px;
+    font-weight: 900;
+    margin-top: 0px;
+    text-align: center;
+   
+}
+.Email{
+    color: black;
+    font-size:26px;
+    font-weight: 900;
+    text-align: center;
+    
+   
+}
+.logout{
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 320px;
+}
+
+

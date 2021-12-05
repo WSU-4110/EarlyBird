@@ -45,4 +45,26 @@ const secret = 'test';
     console.log(error);
   }
 };
-module.exports = {signin, signup};
+
+const userProfile = asyncHandler(async (req, res) => {
+  const user = await User.findById(req.user._id);
+
+  if (user) {
+    user.name = req.body.name || user.name;
+    user.email = req.body.email || user.email;
+   
+
+    const updatedUser = await user.save();
+
+    res.json({
+      name: updatedUser.name,
+      email: updatedUser.email,
+
+      token: generateToken(updatedUser._id),
+    });
+  } else {
+    res.status(404);
+    throw new Error("User Not Found");
+  }
+});
+module.exports = {signin, signup, userProfile};

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import './StudyRes.css'
+import Post from './Post';
 
 var category;
 
@@ -23,10 +24,10 @@ function StudyRes() {
       
       
      const Posts = StudyResPost.map((p) => {
-          return <div>
-          <h2>{p.title}</h2>
-          <p>{p.content}</p>
-          </div>  
+          return <Post
+          title = {p.title}
+         content = {p.content}
+          />  
       })
     
     
